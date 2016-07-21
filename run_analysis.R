@@ -79,4 +79,4 @@ tidy_dataset <- ddply(mean_and_std, .(id, activity), .fun=function(x){ colMeans(
 colnames(tidy_dataset)[-c(1:2)] <- paste(colnames(tidy_dataset)[-c(1:2)], "_mean", sep="")
 saveresults(tidy_dataset,"tidy_dataset")
 
-write.table(tidy_dataset,"C:/Users/Boateng/Desktop/Coursera/data science/gettin data/results/tidy_dataset.txt", row.names = FALSE)
+write.table(tidy_dataset,"C:/Users/Boateng/Desktop/Coursera/data science/gettin data/results/tidy_dataset.txt", row.names = FALSE, sep = "\t")
